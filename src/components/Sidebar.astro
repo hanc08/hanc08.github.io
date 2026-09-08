@@ -22,7 +22,7 @@ const { selectedItem } = Astro.props;
         />
         <div>
           <div class="label-white">Christopher Han</div>
-          <div class="label-gray">High School Student</div>
+          <div class="label-gray">Student at Rice University</div>
         </div>
       </div>
     </a>
@@ -43,12 +43,12 @@ const { selectedItem } = Astro.props;
         <div>Home</div>
       </a>
       <a
-        href="/websites"
+        href="/projects"
         class={`nav-link-container w-inline-block ${
-          selectedItem === 'software-development' ? 'w--current' : ''
+          selectedItem === 'projects' ? 'w--current' : ''
         }`}
         aria-current={
-          selectedItem === 'software-development' ? 'page' : undefined
+          selectedItem === 'projects' ? 'page' : undefined
         }
       >
         <img
@@ -57,7 +57,7 @@ const { selectedItem } = Astro.props;
           alt=""
           class="nav-link-image"
         />
-        <div>Websites</div>
+        <div>Projects</div>
       </a>
       <a
         href="/papers"
